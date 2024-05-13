@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/output.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <title>to-do-list</title>
+</head>
+
+<body style="min-height: 100vh" class="text-black font-semibold relative">
+  <div class="model 0 hidden  z-50 ">
+    <div class="flex justify-center items-center w-full h-full ">
+    <div class="model_container container mx-auto bg-white rounded-lg">
+      <div class="  p-3  rounded-lg mx-auto flex gap-4 flex-col ">
+        <div class="flex justify-between items-center">
+          <h3 class="text-3xl  capitalize font-light text-black text-left ">new tap</h3>
+    
+          <i _ngcontent-ng-c2008031352="" class="cursor-pointer close fa-solid fa-x fs-5"></i>
+        </div>
+        <input type="text" placeholder="Type here" class="input input_update bg-[#f8f9fa]  input-bordered w-full " />
+        <div>
+          <button class="btn w-24 update_btn text-white btn-secondary">update</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  <header>
+    <img src="imgs/images1 (3).jpg" class="w-full min-h-[300px] object-cover" alt="" />
+  </header>
+  <div class="mx-auto rounded-sm -translate-y-48  w-full max-w-screen-sm">
+    <div class="container mx-auto p-5">
+      <div class=" my-3">
+        <h1 _ngcontent-ng-c2008031352="" class="text-white text-center text-4xl tracking-widest ">TODO</h1>
+      </div>
+      <div class="relative bg-[#f8f9fa]  mb-2 rounded-lg overflow-hidden flex h-10 w-full min-w-[200px]">
+        <button
+          class="button !absolute right-1 top-1 z-10 select-none rounded bg-pink-500 py-2 px-4 text-center align-middle text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none  "
+          type="button" data-ripple-light="true">
+          ADD
+        </button>
+        <input type="text" class="peer INPUT bg-[#f8f9fa] overflow-hidden h-full w-full   p-3 outline-0"
+          placeholder="Create a New tada " required />
+
+      </div>
+      <table class="w-full shadow-2xl p-[20px] bg-[#f8f9fa] rounded-md overflow-hidden mt-2">
+        <tbody class="flex tbody gap-2 flex-col">
+
+        </tbody>
+        <tfoot class="flex gap-3 flex-col">
+          <tr class="flex justify-between p-4 border-b-2 rounded-md items-center">
+            <td><span class="item">0</span> items left</td>
+            <td class="clear cursor-pointer">Clear Completed</td>
+          </tr>
+        </tfoot>
+      </table>
+      <footer
+        class="mt-3 w-full shadow-md p-[20px] flex justify-center items-center bg-[#f8f9fa] rounded-md overflow-hidden ">
+        <ul class="flex links justify-center  items-center gap-8">
+          <li class=" opacity-70  cursor-pointer"><a href="" class="active">All</a></li>
+          <li class="opacity-70 cursor-pointer"><a href="" class="">Active</a></li>
+          <li class="opacity-70 cursor-pointer"><a href="" class="">Completed</a></li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+
+</body>
+<script src="js/index.js"> </script>
+
+</html>
